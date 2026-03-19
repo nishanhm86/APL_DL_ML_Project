@@ -38,11 +38,11 @@ year =tk.Label(text="Year of Manufactured", background="#EAEAEA", fg="black", fo
 txt_box_year =tk.Entry(width=30, fg="#0066B1", font=("Times New Roman", 12))
 mileage =tk.Label(text="Mileage", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
 txt_box_mileage =tk.Entry(width=30, fg="#0066B1", font=("Times New Roman", 12))
-tax =tk.Label(text="Tax", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
+tax =tk.Label(text="Tax Rate", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
 txt_box_tax =tk.Entry(width=30, fg="#0066B1", font=("Times New Roman", 12))
-mpg =tk.Label(text="Fuel Consumption", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
+mpg =tk.Label(text="Fuel Consumption(Miles per gallon)", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
 txt_box_mpg =tk.Entry(width=30, fg="#0066B1", font=("Times New Roman", 12))
-engine_capacity =tk.Label(text="Engine Capacity", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
+engine_capacity =tk.Label(text="Engine Capacity(Ex: 3.5)", background="#EAEAEA", fg="black", font=("Times New Roman", 14))
 txt_box_engine_capacity =tk.Entry(width=30, fg="#0066B1", font=("Times New Roman", 12))
 
 
