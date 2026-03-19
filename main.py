@@ -1,8 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import tkinter as tk
-from sklearn.metrics import mean_squared_error
-from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 # Window
@@ -69,7 +67,8 @@ def predict_price():
         mpg = float(txt_box_mpg.get())
         engineSize = float(txt_box_engine_capacity.get())
 
-        prediction = bmw_price.predict([[year, mileage, tax, mpg, engineSize]])
+        prediction = bmw_price.predict(pd.DataFrame([[year, mileage, tax, mpg, engineSize]],
+                                                    columns=['year', 'mileage', 'tax', 'mpg', 'engineSize']))
 
         result_label.config(text=f"Predicted Vehicle Price is: ${round(prediction[0],2)}")
     except ValueError:
